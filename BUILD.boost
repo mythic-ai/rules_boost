@@ -95,10 +95,25 @@ boost_library(
 )
 
 boost_library(
+    name = "context",
+)
+
+boost_library(
+    name = "coroutine",
+    deps = [
+      ":config",
+      ":context",
+      ":core",
+      ":detail",
+    ],
+)
+
+boost_library(
     name = "beast",
     deps = [
         ":asio",
         ":config",
+        ":coroutine",
         ":core",
         ":detail",
         ":smart_ptr",
