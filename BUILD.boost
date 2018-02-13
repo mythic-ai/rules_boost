@@ -1250,6 +1250,7 @@ boost_library(
     name = "stacktrace",
     deps = [
         ":config",
+        ":core",
     ],
     defines = ["_GNU_SOURCE",
     ],
