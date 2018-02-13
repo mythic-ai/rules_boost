@@ -1248,9 +1248,4 @@ boost_library(
 
 boost_library(
     name = "stacktrace",
-    hdrs = [
-        "boost/stacktrace.hpp",
-    ],
-    defines = ["BOOST_STACKTRACE_GNU_SOURCE_NOT_REQUIRED",
-    ],
 )
