@@ -1252,6 +1252,4 @@ boost_library(
         ":config",
         ":core",
     ],
-    defines = ["_GNU_SOURCE",
-    ],
 )
