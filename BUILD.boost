@@ -94,6 +94,11 @@ boost_library(
     name = "assert",
 )
 
+
+boost_library(
+    name = "container_hash",
+)
+
 boost_library(
     name = "context",
 )
@@ -1244,12 +1249,4 @@ boost_library(
 boost_library(
     name = "winapi",
     visibility = ["//visibility:private"],
-)
-
-boost_library(
-    name = "container_hash",
-    hdrs = [
-#        "boost/container_hash/hash.hpp",
-        "boost/container_hash/hash_fwd.hpp",
-    ]	
 )
