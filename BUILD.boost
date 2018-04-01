@@ -1411,3 +1411,7 @@ boost_library(
     name = "winapi",
     visibility = ["//visibility:private"],
 )
+
+boost_library(
+    name = "python",
+)
